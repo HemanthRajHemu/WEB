@@ -16,8 +16,7 @@
 	<meta name="google-site-verification" content="google0186c8ef8f3bf22a.html">
 	<meta name="google-site-verification" content="googlead12f4cfae702c06.html">
 	<!-- indexing -->
-	<meta name="description"
-		content="Web materials">
+	<meta name="description" content="Web materials">
 
 	<meta name=" keywords" content="Future Vision BIE,fvbie,future,vision,Future Vision,hemanth raj,Future Vision BIE Login, 
 	FVBIE Login, Future Vision BIE Sign in, FVBIE Sign in, Future Vision login, Future Vision Sign in,BIE Sign in, BIE login,
@@ -26,11 +25,11 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="./DB/new.css">
-	<link rel="stylesheet" href="./DB/form.css">
-	<script src="./DB/new.js">        </script>
-	<script src="./DB/db.js">        </script>
-	<script src="./DB/admin.js">        </script>
+	<link rel="stylesheet" href="/DB/new.css">
+	<link rel="stylesheet" href="/DB/form.css">
+	<script src="/DB/new.js">        </script>
+	<script src="/DB/db.js">        </script>
+	<script src="/DB/admin.js">        </script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 
@@ -49,18 +48,19 @@
 		// Your web app's Firebase configuration
 		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 		var firebaseConfig = {
-		  apiKey: "AIzaSyB2lWrNUJwTN4V5IiosYdQBxO38juxVrhg",
-		  authDomain: "vtu-info-fvbie.firebaseapp.com",
-		  projectId: "vtu-info-fvbie",
-		  storageBucket: "vtu-info-fvbie.appspot.com",
-		  messagingSenderId: "990973592061",
-		  appId: "1:990973592061:web:36bbae2a317ad54c569994",
-		  measurementId: "G-YKKPTMDNP7"
+			apiKey: "AIzaSyB2lWrNUJwTN4V5IiosYdQBxO38juxVrhg",
+			authDomain: "vtu-info-fvbie.firebaseapp.com",
+			databaseURL: "https://vtu-info-fvbie-default-rtdb.firebaseio.com",
+			projectId: "vtu-info-fvbie",
+			storageBucket: "vtu-info-fvbie.appspot.com",
+			messagingSenderId: "990973592061",
+			appId: "1:990973592061:web:36bbae2a317ad54c569994",
+			measurementId: "G-YKKPTMDNP7"
 		};
-		// Initialize Firebase
+		// Initialize Firebase 
 		firebase.initializeApp(firebaseConfig);
 		firebase.analytics();
-	  </script>
+	</script>
 
 </head>
 
@@ -177,10 +177,8 @@
 		<article>
 			<!--FireBase Login-->
 			<script>
-
-
-/*
 				initApp = function () {
+/*
 					firebase.auth().onAuthStateChanged(function (user) {
 						if (user) {
 							// User is signed in.
@@ -203,7 +201,6 @@
 
 								});
 
-
 						} else {
 							// User is signed out.
 
@@ -212,13 +209,13 @@
 						}
 					}, function (error) {
 						console.log(error);
-					});
+					});*/
 				};
 
 				window.addEventListener('load', function () {
 					initApp();
-				}); */
-				
+				});
+
 			</script>
 			<!--Login Now-->
 			<div class="desp" id="Step" style="display: none;">

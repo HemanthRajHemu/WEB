@@ -37,6 +37,7 @@ function getValue() {
 }
 function UpdateDB(code,link){
     firebase.database().ref().child('Materials').child(code).update({
+    //firebase.database().ref('Materials/').set({
         Link : link,
     });
    // console.log(code);
