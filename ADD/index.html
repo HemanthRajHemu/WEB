@@ -178,38 +178,38 @@
 			<!--FireBase Login-->
 			<script>
 				initApp = function () {
-/*
-					firebase.auth().onAuthStateChanged(function (user) {
-						if (user) {
-							// User is signed in.
-							var uid = user.uid;
-							var rootRef = firebase.database().ref('Users/' + uid);
-							rootRef.once("value")
-								.then(function (snapshot) {
-									//var key1 = snapshot.child("Users").child(uid).child("Status").child("Flag").key;
-									val1 = snapshot.child('Status').child('Flag').val();
-									if (val1 == 2222) {
-										document.getElementById("Step").style.display = "none";
-										document.getElementById("Step1").style.display = "block";
-									}
-									else {
-										//console.log("Unauthorized Access");
-										url = "/login.html"
-										RedCount(url);
-									}
-									//changes to made here
-
-								});
-
-						} else {
-							// User is signed out.
-
-							url = "/login.html"
-							RedCount(url);
-						}
-					}, function (error) {
-						console.log(error);
-					});*/
+					/*
+										firebase.auth().onAuthStateChanged(function (user) {
+											if (user) {
+												// User is signed in.
+												var uid = user.uid;
+												var rootRef = firebase.database().ref('Users/' + uid);
+												rootRef.once("value")
+													.then(function (snapshot) {
+														//var key1 = snapshot.child("Users").child(uid).child("Status").child("Flag").key;
+														val1 = snapshot.child('Status').child('Flag').val();
+														if (val1 == 2222) {
+															document.getElementById("Step").style.display = "none";
+															document.getElementById("Step1").style.display = "block";
+														}
+														else {
+															//console.log("Unauthorized Access");
+															url = "/login.html"
+															RedCount(url);
+														}
+														//changes to made here
+					
+													});
+					
+											} else {
+												// User is signed out.
+					
+												url = "/login.html"
+												RedCount(url);
+											}
+										}, function (error) {
+											console.log(error);
+										});*/
 				};
 
 				window.addEventListener('load', function () {
@@ -271,15 +271,72 @@
 			<!--Step 2-->
 			<div class="container" id="Step2" style="display: none;">
 				<h1 class="center">Step 2</h1>
-				<div class="row" id="dynamicInput">
-				</div>
-				<br />
-				<div class="row">
-					<input type="submit" value="Update" onclick="update()">
-				</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="scheme">Select the Scheme:</label>
+						</div>
+						<div class="col-75">
+							<select id="schemes" name="scheme">
+								<option value="15S">15 Scheme</option>
+								<option value="17S">17 Scheme</option>
+								<option value="18S">18 Scheme</option>
 
+
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-25">
+							<label for="branch">Select the Branch:</label>
+						</div>
+						<div class="col-75">
+							<select id="branchs" name="branch">
+								<option value="ISE">Information Science</option>
+								<option value="CSE">Computer Science</option>
+								<option value="ECE">Electronics And Communication</option>
+								<option value="ME">Mechanics</option>
+								<option value="CV">Civil</option>
+
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-25">
+							<label for="sem">Select the Semester:</label>
+						</div>
+						<div class="col-75">
+							<select id="sems" name="sem">
+								<option value="1sem">1</option>
+								<option value="2sem">2</option>
+								<option value="3sem">3</option>
+								<option value="4sem">4</option>
+								<option value="5sem">5</option>
+								<option value="6sem">6</option>
+								<option value="7sem">7</option>
+								<option value="8sem">8</option>
+
+							</select>
+						</div>
+					</div>
+
+					<br>
+					<hr>
+
+					<div class="row" id="dynamicInput">
+					</div>
+					<br />
+
+					<div class="row">
+						<input type="submit" value="Update" onclick="update()">
+					</div>
+				
 			</div>
 			<br />
+
+
 
 			<!--Step 3-->
 			<div class="desp" id="Step3" style="display: none;">
