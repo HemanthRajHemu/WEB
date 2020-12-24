@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/ico" href="https://hemanthrajhemu.github.io/FutureVisionBIE/logo.png" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146647335-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146647335-1');
+	</script>
+	<title> FUTURE VISION BIE SGPA Calculator - VTU Standards </title>
+	<meta name="google-site-verification" content="google0186c8ef8f3bf22a.html">
+	<meta name="google-site-verification" content="googlead12f4cfae702c06.html">
+	<!-- indexing -->
+	<meta name="description"
+		content="calculate your SGPA in easy steps. Fully automatic Calculator. For Free. No data stored.">
+
+	<meta name="keywords" content="Future Visiob BIE,fvbie,future,vision,Future Vision,hemanth raj,VTU,SGPA, 
+		SGPA Calculator,Grades and Grade Points,Letter Grade,Grade Points Scale ,
+		Computation of SGPA and CGPA,Semester Grade Point
+		Average (SGPA) and Cumulative Grade Point Average (CGPA),Semester Grade Point
+		Average (SGPA), Cumulative Grade Point Average (CGPA), calculator online SGPA, 
+		Calculator auto, free calculator, SGPA Calculator, online vtu sgpa Calculator, sgpa online,sgpa auto online,
+		sgpa grade, sgpa percentage, Illustration for Computation of SGPA and CGPA ,Illustration for Computation of SGPA,
+		Illustration for Computation of SGPA and CGPA  CGPA " />
+	<meta name="author" content="K B HEMANTH RAJ">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://hemanthrajhemu.github.io/FutureVisionBIE/style.css">
+	<link rel="stylesheet" href="sgpa_2.css">
+	<script src="https://hemanthrajhemu.github.io/FutureVisionBIE/script.js">        </script>
+	<script type="text/javascript" src="sgpa_2.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.1/firebase-ui-auth.css" />
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyB2lWrNUJwTN4V5IiosYdQBxO38juxVrhg",
+			authDomain: "vtu-info-fvbie.firebaseapp.com",
+			databaseURL: "https://vtu-info-fvbie-default-rtdb.firebaseio.com",
+			projectId: "vtu-info-fvbie",
+			storageBucket: "vtu-info-fvbie.appspot.com",
+			messagingSenderId: "990973592061",
+			appId: "1:990973592061:web:36bbae2a317ad54c569994",
+			measurementId: "G-YKKPTMDNP7"
+		};
+		// Initialize Firebase 
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<!-- HEADER NAME WITH LOGO  -->
+		<header>
+			<h1 class="FVBIE"><a href="https://hemanthrajhemu.github.io"><img
+						src="https://hemanthrajhemu.github.io/FutureVisionBIE/logo.png" alt="Future Vision BIE"
+						style="float:left ;width:170px;height:140px;"></a>
+				Future Vision BIE</h1><br />
+			<h1 class="FVBIE1">ONE STOP FOR ALL STUDY MATERIALS & LAB PROGRAMS</h1><br />
+
+		</header>
+		<!-- TOP NAVIGATION TOOLS -->
+		<div class="topnav">
+
+			<a class="openbtn" onclick="openNav()" style="font-family:courier; font-size:25px; text-align:center;">
+				<img src="https://hemanthrajhemu.github.io/FutureVisionBIE/menu.png" alt="E"
+					style="width:38px;height:38px;" />
+				MENU
+			</a>
+			<a href="javascript:WhatsappShare();" style="float:right;">
+				<img src="https://hemanthrajhemu.github.io/FutureVisionBIE/web.png" alt="Whatsapp Share"
+					style="float:right; width:80px;height:40px;" />
+			</a>
+			<a href="https://telegram.me/joinchat/AAAAAFTtp8kuvCHALxuMaQ" style="float:right;">Join Telegram, to get
+				Instant Updates</a>
+
+		</div>
+		<!--  NAVIGATION TOOLS -->
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+				<img src="https://hemanthrajhemu.github.io/FutureVisionBIE/cancel-64.png" alt="X"
+					style="width:64px;height:64px;" />
+			</a><br />
+
+
+			<a href="https://hemanthrajhemu.github.io/FutureVisionBIE/disclaimer.html">Disclaimer</a>
+			<a href="https://hemanthrajhemu.github.io/privacy-policy.html">Privacy Policy</a>
+			<a href="https://hemanthrajhemu.github.io/CSE3/">3rd Sem</a>
+			<a href="https://hemanthrajhemu.github.io/CSE4/">4th sem</a>
+			<a href="https://hemanthrajhemu.github.io/FutureVisionBIE/WP/5CSE">5th sem CSE</br>Text
+				Book</br>Programs</br></a>
+			<a href="https://hemanthrajhemu.github.io/CSE6">6th sem CSE</br>Text Book</br>Programs</br></a>
+
+			</br></br></br></br></br></br></br></br></br></br></br></br>
+
+			<a href="https://hemanthrajhemu.github.io/FutureVisionBIE/contact.html">CONTACT</a>
+			<a href="https://hemanthrajhemu.github.io/">HOME</a>
+		</div>
+		<!-- CENTER PATH FOR INFO  -->
+		<article>
+
+
+			<div class="alertA1">
+				<span class="closebtnA1" onclick="this.parentElement.style.display='none';">&times;</span>
+				<strong>NOTE!</strong>
+				Click on MENU to Browse between Subjects...
+			</div>
+			<BR />
+
+
+
+			<div class="desp">
+
+				<p>
+				<h1>Calculate the SGPA According to the VTU Standards.</h1>
+				</p>
+
+			</div>
+			<br />
+
+			<div class="desp">
+
+				<p>
+				<h1>This is the Simple 3 Step SGPA Calculator.</h1>
+				<h1>Step 1 - Enter the Number of Subjects in the semester.</h1>
+				<h1>Step 2 - Enter the Details such as Marks Obtained, Credit & total Marks.</h1>
+				<h1>Step 3 - Get your SGPA Automatically calculated.</h1>
+				<h1>Strictly Following VTU Rules in calculation of SGPA/CGPA</h1>
+				</p>
+
+			</div>
+
+			<br /><br />
+			<div class="lii"><a href="https://hemanthrajhemu.github.io/vtu_cal_rules.pdf">Download Rules By VTU</a>
+			</div>
+
+			<br />
+			<div class="lii"><a href="https://vtu.ac.in/wp-content/uploads/2019/12/becbcs2015-16.pdf"
+					target="_blank">VTU Offical Website Document</a>
+			</div>
+
+
+			<br />
+			<div class="lii"><a href="https://hemanthrajhemu.github.io/SGPA-Calculator.html">Calculate your SGPA
+					Here</a>
+			</div>
+			<br /><br />
+			<div class="alertA1">
+				<span class="closebtnA1" onclick="this.parentElement.style.display='none';">&times;</span>
+				<strong>SHARE</strong>
+				Share the SGPA Calculator to your Friends. & Do Support us by following us on Instagram <a
+					href="https://www.instagram.com/futurevisionbie/">@FutureVisionBIE</a>
+			</div>
+
+
+			<div class="container" id="Step1">
+				<h1 class="center">Step 1</h1>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="scheme">Select the Scheme:</label>
+					</div>
+					<div class="col-75">
+						<select id="schemes" name="scheme">
+							<option value="15S">15 Scheme</option>
+							<option value="17S">17 Scheme</option>
+							<option value="18S">18 Scheme</option>
+
+
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="branch">Select the Branch:</label>
+					</div>
+					<div class="col-75">
+						<select id="branchs" name="branch">
+							<option value="CSE">Computer Science</option>
+							<option value="ISE">Information Science</option>
+							<option value="ECE">Electronics And Communication</option>
+							<option value="ME">Mechanics</option>
+							<option value="CV">Civil</option>
+
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="sem">Select the Semester:</label>
+					</div>
+					<div class="col-75">
+						<select id="sems" name="sem">
+
+							<option value="1sem">1</option>
+							<option value="2sem">2</option>
+							<option value="3sem">3</option>
+							<option value="4sem">4</option>
+							<option value="5sem">5</option>
+							<option value="6sem">6</option>
+							<option value="7sem">7</option>
+							<option value="8sem">8</option>
+
+						</select>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<input type="submit" value="Submit" onclick="showMarks()">
+
+					<input type="button" value="Clear" onclick="ClearData()">
+				</div><br />
+				<div class="row">
+					<input type="submit" onclick="WhatsappShare()" style="float:center;" value="Whatsapp Share">
+					</input>
+				</div>
+				<br />
+				<div class="row">
+					<input type="submit" value="CGPA Calculator"
+						onclick="window.location.href='https://hemanthrajhemu.github.io/CGPA-Calculator.html'">
+				</div>
+			</div>
+
+
+			<div class="container" id="Step2" style="display: none;">
+				<h1 class="center">Step 2</h1>
+				<div class="row" id="dynamicInput">
+				</div>
+				<br />
+				<div class="row">
+					<input type="submit" value="Calculate" onclick="calculate()">
+
+					<input type="button" value="Clear" onclick="ClearData()">
+				</div><br />
+				<div class="row">
+					<input type="submit" onclick="WhatsappShare()" style="float:center;" value="Whatsapp Share">
+					</input>
+				</div>
+				<br />
+				<div class="row">
+					<input type="submit" value="CGPA Calculator"
+						onclick="window.location.href='https://hemanthrajhemu.github.io/CGPA-Calculator.html'">
+				</div>
+			</div>
+
+
+			<div class="container" id="Step3" style="display: none;">
+				<h1 class="center">Step 3</h1>
+				<div class="desp" id="SGPAResult"></div>
+				<div class="desp" id="infoSGPA"></div>
+
+				<br /><br /><br />
+				<div>
+					<div class="center" style="overflow-x:auto;">
+						<table id="SGPATable" class="center">
+							<tr>
+								<th>Subject Code</th>
+								<th>Subject Name</th>
+								<th>Obtained Marks</th>
+								<th>Percentage</th>
+								<th>Credit</th>
+								<th>Grade Point</th>
+								<th>Grade Letter</th>
+								<th>Credit Points (Credit * Grade)</th>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+				<div class="desp" id="FinalSGPA"></div>
+
+				<br />
+				<div class="row">
+					<input type="button" value="Clear" onclick="ClearData()">
+				</div><br />
+				<div class="row">
+					<input type="submit" onclick="WhatsappShare()" style="float:center;" value="Whatsapp Share">
+					</input>
+				</div>
+				<br />
+				<div class="row">
+					<input type="submit" value="CGPA Calculator"
+						onclick="window.location.href='CGPA-Calculator.html'">
+				</div>
+
+			</div>
+
+			<div class="desp" id="Load" style="display: none;">
+				<h1 class="center">Loading Please Wait</h1>
+			</div>
+
+
+			<div class="desp" id="NoLoad" style="display: none;">
+				<h1 class="center">Sorry to Inform You that we don't have the Combination of the Data on our DataBase
+				</h1>
+				<h1 class="center">But Don't Worry we got you Covered. You can use our Version 1 of SGPA Calculator</h1>
+				<div class="row">
+					<input type="submit" value="CGPA Calculator"
+						onclick="window.location.href='../V1/SGPA-Calculator.html'">
+					<input type="button" value="Clear" onclick="ClearData()">
+				</div>
+			</div>
+
+			<div class="desp">
+
+				<p>
+				<H1>lIKE OUR CONTENT SUPPORT US BY FOLLOWING US ON INSTAGRAM : <a
+						href="https://www.instagram.com/futurevisionbie/">@futurevisionbie</a></H1>
+				<h1>Latest Updates are also posted in instagram as Stories...</h1>
+				<h1>For immediate Notification Join the <a
+						href="https://telegram.me/joinchat/AAAAAFTtp8kuvCHALxuMaQ">Telegram
+						Channel</a></h1>
+				</p>
+
+			</div>
+			<br />
+			<br />
+
+
+
+
+			<div class="alertA1">
+				<span class="closebtnA1" onclick="this.parentElement.style.display='none';">&times;</span>
+				<strong>Note</strong>
+				ANY PROBLEM IN DOWNLOADING, YOU ARE FREE TO CONTACT US...<br /><br /> -ADMIN
+			</div>
+
+			<!-- call out --->
+			<div class="callout">
+				<div class="callout-header">Note</div>
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+				<div class="callout-container">
+					<p>we never save your Data Here. Percentage is Rounded off to 4 decimal points.
+					</p>
+				</div>
+			</div>
+
+			<br /><br />
+		</article>
+
+		<footer>Copyright By Future Vision BIE 2018-2019 </footer>
+
+	</div>
+</body>
+
+</html>
